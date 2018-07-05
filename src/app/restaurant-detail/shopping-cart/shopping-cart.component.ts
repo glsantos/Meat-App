@@ -24,7 +24,7 @@ export class ShoppingCartComponent implements OnInit {
 
   removeItem(item: any){
 
-    this.shoppingCartService.remoteItem(item);
+    this.shoppingCartService.removeItem(item);
   }
 
   addItem(item: any){

@@ -9,9 +9,9 @@ export class OrderItemsComponent implements OnInit {
 
   @Input() items: CartItem[];
 
-  @Output() increaseQty = new EventEmitter<CartItem>()
-  @Output() decreaseQty = new EventEmitter<CartItem>()
-  @Output() remove = new EventEmitter<CartItem>()
+  @Output() increaseQty = new EventEmitter<CartItem>();
+  @Output() decreaseQty = new EventEmitter<CartItem>();
+  @Output() remove = new EventEmitter<CartItem>();
 
   constructor() { }
 
@@ -33,6 +33,6 @@ export class OrderItemsComponent implements OnInit {
     this.remove.emit(item);
   }
 
-  //PAREI NO MINUTO = 05:46 da aula 65 na seção 6
+  
 
 }
