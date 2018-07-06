@@ -33,7 +33,7 @@ export class OrderService {
 
     remove(item: CartItem){
 
-        this.cartService.remoteItem(item);
+        this.cartService.removeItem(item);
     }
 
     checkOrder(order: Order): Observable<string> {
